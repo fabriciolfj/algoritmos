@@ -22,7 +22,7 @@ def search(name):
     while search_queue:
         person = search_queue.popleft()
         if not person in searched:
-            if person_is_seller(person):
+            if d(person):
                 print(person + " is a mango seller!")
                 return True
             else:
